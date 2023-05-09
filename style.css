@@ -1,63 +1,104 @@
+body {
+  margin:0px;
+  padding: 0px;
+}
 
-.container {
-  background: white;
-  color: black;
-  font-family: Arial, sans-serif;
+#background-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.banner {
+  background-color: rgb(37 34 139);
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0px;
+  opacity: .8;
+  margin-block-end: 20px;
+  display: flex;
+}
+
+.banner .image {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .image img {
+  width: 50%;
+  height: 75%;
+  border-radius: 5px;
+  border: 1px solid rgb(98, 97, 97);
+  object-fit: cover;
+  box-shadow: 0 8px 8px -4px lightblue;
+}
+
+.banner .description {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Courgette', cursive;
   font-size: 20px;
-  font-weight: lighter;
-  text-align: center;
-  margin: 8px;
-}
-
-.card {
-  background-color: white;
-  padding: 60px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-  border-radius: 20px;
-  margin: 30px 0px;
-  text-align: center;
-}
-
-.img-circle {
-  border-radius: 50%;
-  width: 200px;
-  height: auto;
-}
-
-.card-btn {
-  padding: 50px;
-}
-
-.btn-red {
-  background-color: #820000;
   color: white;
-  padding: 15px 20px;
-  border-radius: 4px;
-  text-decoration: none;
 }
 
-.btn-red:hover {
-  background-color: red;
+.banner .icons {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.list-inline {
-  list-style: none;
-  padding-top: 10px;
-  padding-left: 0px;
-}
-
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
-  text-decoration: none;
+.banner .icons .icon {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 0;
 }
 
 .fab {
-  color: #820000;
-  font-size: 50px;
+  color: white;
+  font-size: 60px;
 }
 
 .fab:hover {
-  color: red;
+  color: rgb(84, 35, 35);
+}
+
+.banner .button {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .button a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 25px 30px;
+  border-radius: 5px;
+  background-color: blue;
+}
+
+.banner .button a:hover {
+  background-color: rgb(84, 35, 35);
 }
